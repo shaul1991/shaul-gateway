@@ -33,6 +33,11 @@ dependencies {
 
     // spring cloud gateway
     implementation("org.springframework.cloud:spring-cloud-starter-gateway")
+
+    implementation("io.micrometer:micrometer-tracing-bridge-brave")
+    implementation("io.micrometer:micrometer-registry-prometheus")
+    implementation("io.zipkin.reporter2:zipkin-reporter-brave")
+    implementation("io.github.openfeign:feign-micrometer")
 }
 
 dependencyManagement {
