@@ -32,12 +32,18 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
 
     // spring cloud gateway
-    implementation("org.springframework.cloud:spring-cloud-starter-gateway")
+    implementation("org.springframework.cloud:spring-cloud-starter-gateway-mvc")
 
     implementation("io.micrometer:micrometer-tracing-bridge-brave")
     implementation("io.micrometer:micrometer-registry-prometheus")
     implementation("io.zipkin.reporter2:zipkin-reporter-brave")
     implementation("io.github.openfeign:feign-micrometer")
+
+    // spring cloud security
+    implementation("org.springframework.boot:spring-boot-starter-security")
+
+    // spring cloud security oauth2 resource server
+    implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
 }
 
 dependencyManagement {
